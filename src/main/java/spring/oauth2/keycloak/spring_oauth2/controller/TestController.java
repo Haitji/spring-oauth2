@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class TestController {
 
     @GetMapping("/hello-1")
-    @PreAuthorize("hashRole('admin_client')")
+    @PreAuthorize("hasRole('admin_client')")
     public String helloAdmin() {
         return "Hello Spring Boot with Keycloak -ADMIN";
     }
 
     @GetMapping("/hello-2")
-    @PreAuthorize("hashRole('user_client')")
+    @PreAuthorize("hasRole('user_client') or hasRole('admin_client')")
     public String helloUser() {
         return "Hello Spring Boot with Keycloak -USER";
     }
