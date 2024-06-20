@@ -10,7 +10,7 @@ import org.keycloak.admin.client.resource.UsersResource;
 public class KeycloakProvider {
 
     private static final String SERVER_URL= "http://localhost:9090";
-    private static final String REAL_NAME= "spring-client-api-rest";
+    private static final String REAL_NAME= "spring-boot-realm-dev";//Don't confuse this with client
     private static final String REALM_MASTER= "master";
     private static final String ADMIN_CLI="admin-cli";
     private static final String USER_CONSOLE="admin";

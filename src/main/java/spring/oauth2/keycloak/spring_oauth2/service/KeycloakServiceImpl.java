@@ -128,7 +128,7 @@ public class KeycloakServiceImpl implements IKeycloakService{
     public void deleteUser(String userId) {
         KeycloakProvider.getUserResource()
                 .get(userId)
-                .remove();;
+                .remove();
     }
 
     @Override
